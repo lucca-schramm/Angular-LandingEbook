@@ -1,0 +1,13 @@
+.container-menu-bar{
+  align-items: center;
+}
+.container-menu-bar > ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-menu-bar > ul > li {
+  font-size: 20px;
+  margin-right: 20px;
+  list-style: none;
+}

@@ -1,0 +1,22 @@
+div{
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1{
+  margin: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+p{
+  margin: 20px;
+}

@@ -7,6 +7,7 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { ResumoComponent } from './resumo/resumo.component';
 import { AutorComponent } from './autor/autor.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { PagamentoPixComponent } from './pagamento-pix/pagamento-pix.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
     ApresentacaoComponent,
     ResumoComponent,
     AutorComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    PagamentoPixComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<form id="form-checkout" action="criarPagamento()" method="post">
+<form id="form-checkout" action="/payment-process" method="post">
   <div>
     <h2 id="titulo-form-pagamento">Pagamento Pix via Mercado Pago</h2>
     <div>
@@ -22,6 +22,14 @@
     <div>
       <label for="identificationNumber">Número do documento</label>
       <input id="form-checkout__identificationNumber" name="identificationNumber" type="text" placeholder="19119119100">
+    </div>
+    <div>
+      <label for="productName">Produto</label>
+      <input id="form-checkout__productName" name="productName" type="text" placeholder="Kit do PSG">
+    </div>
+    <div>
+      <label for="buyAmount">Valor da compra</label>
+      <input id="form-checkout__buyAmount" name="buyAmount" type="text" placeholder="100">
     </div>
   </div>
 

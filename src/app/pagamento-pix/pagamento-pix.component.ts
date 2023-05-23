@@ -9,28 +9,28 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./pagamento-pix.component.css']
 })
 export class PagamentoPixComponent {
+  payerFirstName: string='';
+  payerLastName: string='';
+  email: string='';
+  identificationType: string='';
+  identificationNumber: string='';
+  productName: string='';
+  buyAmount: number=0;
+
   constructor(private mercadoPagoService: MercadoPagoService) {}
 
   criarPagamento(): void {
     const paymentData = {
-      transaction_amount: 100,
-      description: 'Título do produto',
+      transaction_amount: this.buyAmount,
+      description: this.productName,
       payment_method_id: 'pix',
       payer: {
-        email: 'test@test.com',
-        first_name: 'Test',
-        last_name: 'User',
+        email: this.email,
+        first_name: this.payerFirstName,
+        last_name: this.payerLastName,
         identification: {
-          type: 'CPF',
-          number: '19119119100'
-        },
-        address: {
-          zip_code: '06233200',
-          street_name: 'Av. das Nações Unidas',
-          street_number: '3003',
-          neighborhood: 'Bonfim',
-          city: 'Osasco',
-          federal_unit: 'SP'
+          type: this.identificationType,
+          number: this.identificationNumber
         }
       }
     };

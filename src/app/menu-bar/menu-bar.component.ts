@@ -10,5 +10,8 @@ export class MenuBarComponent {
   primeiroLink:string="";
   @Input()
   segundoLink:string="";
+  @Input()
+  terceiroLink:string="";
+
 
 }

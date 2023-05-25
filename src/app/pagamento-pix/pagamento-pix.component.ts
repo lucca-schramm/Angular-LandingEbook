@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MercadoPagoService } from '../services/mercadopago.service';
 
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-pagamento-pix',
@@ -37,11 +36,9 @@ export class PagamentoPixComponent {
 
     this.mercadoPagoService.criarPagamento(paymentData)
       .then(data => {
-        // Lógica para tratamento de sucesso
         console.log('Resposta:', data);
       })
       .catch(error => {
-        // Lógica para tratamento de erro
         console.error('Erro:', error);
       });
   }

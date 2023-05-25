@@ -1,9 +1,11 @@
 <header>
   <app-menu-bar
   primeiroLink="Autor"
-  segundoLink="Resumo"></app-menu-bar>
+  segundoLink="Resumo"
+  terceiroLink="Pagamento"></app-menu-bar>
 </header>
-<app-apresentacao
+<body>
+  <app-apresentacao
   titulo="A Era Artifical"
   imagem="..\assets\images\capa-livro.jpg"
   resumo="A história em que a inteligência artiicial permitiu aos robôs se tornarem a espécie dominante do nosso planeta.
@@ -23,5 +25,6 @@
   linkVenda="https://amzn.to/3bXy1g9"
   ></app-autor>
 
-  <app-pagamento-pix></app-pagamento-pix>
+</body>
+  <app-pagamento-pix id="Pagamento"></app-pagamento-pix>
 <router-outlet></router-outlet>
